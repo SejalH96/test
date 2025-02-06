@@ -10,7 +10,7 @@ on:
     build:
       runs-on: ubuntu-latest
       steps:
-          -uses: actions/checkout@v1
-          -name: run a sample
-           run: echo "Hello World"
+          - uses: actions/checkout@v1
+          - name: run a sample
+            run: echo "Hello World"
       
