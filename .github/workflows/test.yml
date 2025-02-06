@@ -8,9 +8,9 @@ on:
 
   jobs:
     build:
-      runs-on: ubutu-latest
+      runs-on: ubuntu-latest
       steps:
           -uses: actions/checkout@v1
           -name: run a sample
-           run: echo Hello World
+           run: echo "Hello World"
       
