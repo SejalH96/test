@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print Message
-      run: echo "Hello World"
+      run: echo "Hello World" > artifact-output/test.txt
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: build-artifact
-        path: ${( github.artifacts )}
+        path: artifact-output/
   deploy:
     runs-on: ubuntu-latest
     steps:
